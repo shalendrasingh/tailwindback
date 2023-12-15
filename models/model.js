@@ -37,6 +37,9 @@ const jobSchema = new mongoose.Schema(
     externalApply: {
       type: String,
     },
+    applyType: {
+      type: String,
+    },
   },
   {
     timestamps: true,

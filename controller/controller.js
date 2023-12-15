@@ -9,6 +9,7 @@ const createJob = async (req, res) => {
       industry,
       location,
       remoteType,
+      applyType,
       expMinimum,
       expMaximum,
       salaryMinimum,
@@ -31,6 +32,7 @@ const createJob = async (req, res) => {
       totalEmployee,
       quickApply,
       externalApply,
+      applyType,
     });
     await job.save();
     res.status(201).json({ message: "Job Added Successfully", job: job });
